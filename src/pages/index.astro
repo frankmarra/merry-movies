@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
 import movies from '../content/movies/movies.json'
+
+const today = new Date()
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,7 +12,7 @@ import movies from '../content/movies/movies.json'
 
     <ul role="list" class="link-card-grid">
       {
-        movies.map((movie) => (
+        movies.map((movie, index) => (
           <Card
             href={movie.href}
             title={movie.title}
@@ -18,7 +20,9 @@ import movies from '../content/movies/movies.json'
             poster={movie.poster}
             rated={movie.rated}
             year={movie.year}
-            date={movie.date}
+            index={index}
+            key={movie.title}
+            date={today.getDate()}
           />
         ))
       }
@@ -30,9 +34,9 @@ import movies from '../content/movies/movies.json'
   main {
     margin: auto;
     padding: 1rem;
-    width: 1200px;
-    max-width: calc(100% - 2rem);
-    color: #386641;
+    width: min(1400px, 100% - 2rem);
+
+    color: #5dc6b2;
     font-size: 20px;
     line-height: 1.6;
   }
@@ -53,8 +57,8 @@ import movies from '../content/movies/movies.json'
 
   .link-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 3rem;
     padding: 0;
   }
 </style>

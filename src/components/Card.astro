@@ -1,65 +1,52 @@
 ---
 import { Image } from 'astro:assets'
-const { href, title, poster, rated, year, plot } = Astro.props
+const { href, title, poster, rated, year, plot, index, date } = Astro.props
+const show = index <= date - 1 ? null : 'opaque'
 ---
 
-<li class="link-card">
-  <div>
-    <img src={poster} alt={title} />
-    <section class="info">
-      <h2>
-        {title}
-      </h2>
-      <section class="plot">
-        <p>
-          {plot}
-        </p>
-        <p>{year}{' '} <span>{rated}</span></p>
-      </section>
-    </section>
-  </div>
+<li class=`link-card`>
+  <img src={poster} alt={title} class={show} />
+  <p class={show == null ? 'opaque' : null}>{index + 1}</p>
 </li>
 <style>
   img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     aspect-ratio: 2/3;
   }
   .link-card {
     list-style: none;
     display: flex;
+    flex-direction: column;
     color: #f2e8cf;
     background-color: #386641;
-    background-image: none;
-    background-size: 400%;
     border-radius: 7px;
-    border: 10px solid #bc4749;
-    width: 300px;
+    border: 10px solid #f25334;
+    position: relative;
+    /* background: repeating-linear-gradient(
+      -45deg,
+      #5ac5ad,
+      #f5f4de 10%,
+      #f5f4de 10%,
+      #f24d2d 20%
+    ); */
   }
-  /* .link-card > a {
-    width: 100%;
-    text-decoration: none;
-    line-height: 1.4;
-    padding: calc(1.5rem - 1px);
-    border-radius: 8px;
-    color: white;
-    background-color: #23262d;
-    opacity: 0.8;
-  } */
+  .opaque {
+    opacity: 0;
+  }
   h2 {
     margin: 0;
     font-size: 1.65rem;
     transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
   p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-  .info {
-    padding: 1rem;
-  }
-  .plot {
-    font-size: 14px;
-    width: 29ch;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
   }
 </style>
