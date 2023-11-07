@@ -1,12 +1,19 @@
 ---
 import { Image } from 'astro:assets'
-const { href, title, poster, rated, year, plot, index, date } = Astro.props
+const { slug, title, poster, rated, year, plot, index, date } = Astro.props
 const show = index <= date - 1 ? null : 'opaque'
 ---
 
 <li class=`link-card`>
-  <img src={poster} alt={title} class={show} />
-  <p class={show == null ? 'opaque' : null}>{index + 1}</p>
+  <a href={!show ? `/${slug}` : '#'}>
+    <img
+      src={poster}
+      alt={title}
+      class={show}
+      transition:name={`img-${slug}`}
+    />
+    <p class={show == null ? 'opaque' : null}>{index + 1}</p>
+  </a>
 </li>
 <style>
   img {
@@ -48,5 +55,10 @@ const show = index <= date - 1 ? null : 'opaque'
     margin: 0;
     padding: 0;
     font-size: 6rem;
+  }
+  a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
   }
 </style>

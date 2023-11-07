@@ -5,7 +5,7 @@
     "rated": "R",
     "year": "1988",
     "plot": "A New York City police officer tries to save his estranged wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
-    "href": ""
+    "slug": "die-hard"
   },
   {
     "title": "Love Actually",
@@ -13,7 +13,7 @@
     "rated": "R",
     "year": "2003",
     "plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
-    "href": ""
+    "slug": "love-actually"
   },
   {
     "title": "The Year Without a Santa Claus",
@@ -21,202 +21,14 @@
     "rated": "TV-G",
     "year": "1974",
     "plot": "When a weary and discouraged Santa Claus considers skipping his Christmas Eve run one year, Mrs. Claus and his elves set out to change his mind.",
-    "href": ""
+    "slug": "the-year-without-a-santa-claus"
   },
   {
     "title": "National Lampoon's Christmas Vacation",
     "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
     "rated": "PG-13",
     "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
-  },
-  {
-    "title": "National Lampoon's Christmas Vacation",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGZkMWQ2MzMtYTkxYS00OThmLWI0ZTQtNmY0ZTkyY2E4MjliXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "rated": "PG-13",
-    "year": "1989",
-    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster."
+    "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster.",
+    "slug": "national-lampoons-christmas-vacation"
   }
 ]
