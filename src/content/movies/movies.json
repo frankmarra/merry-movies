@@ -5,7 +5,8 @@
     "rated": "R",
     "year": "1988",
     "plot": "A New York City police officer tries to save his estranged wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
-    "slug": "die-hard"
+    "slug": "die-hard",
+    "watch": "https://www.justwatch.com/us/movie/die-hard-1988"
   },
   {
     "title": "Love Actually",
@@ -13,7 +14,8 @@
     "rated": "R",
     "year": "2003",
     "plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
-    "slug": "love-actually"
+    "slug": "love-actually",
+    "watch": "https://www.justwatch.com/us/movie/love-actually"
   },
   {
     "title": "The Year Without a Santa Claus",
@@ -21,7 +23,8 @@
     "rated": "TV-G",
     "year": "1974",
     "plot": "When a weary and discouraged Santa Claus considers skipping his Christmas Eve run one year, Mrs. Claus and his elves set out to change his mind.",
-    "slug": "the-year-without-a-santa-claus"
+    "slug": "the-year-without-a-santa-claus",
+    "watch": "https://www.justwatch.com/us/movie/the-year-without-a-santa-claus"
   },
   {
     "title": "National Lampoon's Christmas Vacation",
@@ -29,6 +32,7 @@
     "rated": "PG-13",
     "year": "1989",
     "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster.",
-    "slug": "national-lampoons-christmas-vacation"
+    "slug": "national-lampoons-christmas-vacation",
+    "watch": "https://www.justwatch.com/us/movie/national-lampoons-christmas-vacation"
   }
 ]

@@ -3,51 +3,95 @@ import Layout from '../layouts/Layout.astro'
 import movies from '../content/movies/movies.json'
 
 export async function getStaticPaths() {
-  return movies.map(({ title, poster, rated, year, plot, slug }) => {
+  return movies.map(({ title, poster, rated, year, plot, slug, watch }) => {
     return {
       params: { slug },
-      props: { title, poster, rated, year, plot, slug }
+      props: { title, poster, rated, year, plot, watch, slug }
     }
   })
 }
 
-const { title, poster, rated, year, plot, slug } = Astro.props
+const { title, poster, rated, year, plot, slug, watch } = Astro.props
 ---
 
 <Layout title={title}>
   <main>
-    <section class="info-box">
-      <img src={poster} alt={title} transition:name={`img-${slug}`} />
-      <div class="movie-info">
-        <h2>{title}</h2>
-        <div class="rating-year">
-          <p>Rated: {rated}</p>
-          <p>{year}</p>
-        </div>
-        <p>{plot}</p>
-        <a href="/">Home</a>
+    <div class="page-grid">
+      <div class="striped-box" transition:name={`striped-box-${slug}`}>
+        <section class="info-box">
+          <img
+            src={poster}
+            alt={title}
+            transition:name={`img-${slug}`}
+            class="poster"
+          />
+          <div class="movie-info">
+            <h2>{title}</h2>
+            <div class="rating-year">
+              <p>Rated: {rated}</p>
+              <p>{year}</p>
+            </div>
+            <p>{plot}</p>
+            <div class="links">
+              <a href="/" class="button">Back</a>
+              <a href={watch} class="button">Where to watch</a>
+            </div>
+          </div>
+          <!-- <div class="gromit-flex">
+            <div class="gromit"></div>
+          </div> -->
+        </section>
       </div>
-    </section>
+    </div>
   </main>
 </Layout>
 
 <style>
   main {
-    margin: auto;
-    padding: 1rem;
-    width: min(1400px, 100% - 2rem);
-
     color: #5dc6b2;
     font-size: 20px;
     line-height: 1.6;
   }
   h2 {
-    margin: 0;
-    font-size: 1.65rem;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    font-family: 'cheeseDonut';
+    font-size: 3.5rem;
+  }
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 100vh;
+    align-content: center;
+  }
+  .striped-box {
+    grid-column: 2/2;
+    background: repeating-linear-gradient(
+      45deg,
+      #f25434,
+      #f25434 10px,
+      #ffab9a 10px,
+      #ffab9a 20px
+    );
+    clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
   }
   .info-box {
     display: flex;
+    /* grid-column: 2/2; */
+    /* border: 10px solid #f25334; */
+    /* border-radius: 7px; */
+    background: #5dc6b2;
+    margin: 3%;
+    clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
+  }
+  .poster {
+    height: 60vh;
+  }
+  .movie-info {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline-start: 2rem;
+    width: 55ch;
   }
   .rating-year {
     display: flex;
@@ -55,4 +99,19 @@ const { title, poster, rated, year, plot, slug } = Astro.props
   .rating-year p {
     padding-inline-end: 2rem;
   }
+
+  .links a {
+    margin-inline-end: 2vw;
+  }
+  /* .gromit-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gromit {
+    background: #f6f3e0;
+    border: 25px solid #f6f3e0;
+    border-radius: 50%;
+    margin-inline-start: 100px;
+  } */
 </style>

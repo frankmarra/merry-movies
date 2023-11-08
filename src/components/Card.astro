@@ -4,32 +4,59 @@ const { slug, title, poster, rated, year, plot, index, date } = Astro.props
 const show = index <= date - 1 ? null : 'opaque'
 ---
 
-<li class=`link-card`>
-  <a href={!show ? `/${slug}` : '#'}>
-    <img
-      src={poster}
-      alt={title}
-      class={show}
-      transition:name={`img-${slug}`}
-    />
-    <p class={show == null ? 'opaque' : null}>{index + 1}</p>
-  </a>
+<li class="striped-box" transition:name={`striped-box-${slug}`}>
+  <div class="link-card">
+    <a href={!show ? `/${slug}` : '#'}>
+      <img
+        src={poster}
+        alt={title}
+        class={show}
+        transition:name={`img-${slug}`}
+      />
+      <p class={show == null ? 'opaque' : null}>{index + 1}</p>
+    </a>
+  </div>
 </li>
+
+<!-- <script>
+  import { navigate } from 'astro/transitions/router'
+
+  const { slug } = Astro.props
+
+  const cards = document.querySelectorAll('li.link-card')
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      navigate(slug)
+    })
+  })
+</script> -->
 <style>
   img {
     width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 2/3;
+    vertical-align: bottom;
+  }
+  .striped-box {
+    padding: 10px;
+    border-radius: 7px;
+    background: repeating-linear-gradient(
+      45deg,
+      #f25434,
+      #f25434 5px,
+      #ffab9a 5px,
+      #ffab9a 10px
+    );
   }
   .link-card {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+
     color: #f2e8cf;
-    background-color: #386641;
-    border-radius: 7px;
-    border: 10px solid #f25334;
+    /* background-color: #386641; */
+    /* border-radius: 7px;
+    border: 10px solid #f25334; */
     position: relative;
     /* background: repeating-linear-gradient(
       -45deg,
@@ -43,7 +70,6 @@ const show = index <= date - 1 ? null : 'opaque'
     opacity: 0;
   }
   h2 {
-    margin: 0;
     font-size: 1.65rem;
     transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
@@ -52,13 +78,7 @@ const show = index <= date - 1 ? null : 'opaque'
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
+
     font-size: 6rem;
-  }
-  a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
   }
 </style>
