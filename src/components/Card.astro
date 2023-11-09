@@ -7,13 +7,20 @@ const show = index <= date - 1 ? null : 'opaque'
 <li class="striped-box" transition:name={`striped-box-${slug}`}>
   <div class="link-card">
     <a href={!show ? `/${slug}` : '#'}>
-      <img
+      <!-- <img
         src={poster}
         alt={title}
         class={show}
         transition:name={`img-${slug}`}
+      /> -->
+      <img
+        src={poster}
+        alt={title}
+        transition:name={`img-${slug}`}
+        class="opaque"
       />
-      <p class={show == null ? 'opaque' : null}>{index + 1}</p>
+      <!-- <p class={show == null ? 'opaque' : null}>{index + 1}</p> -->
+      <p class="">{index + 1}</p>
     </a>
   </div>
 </li>
@@ -33,7 +40,7 @@ const show = index <= date - 1 ? null : 'opaque'
 </script> -->
 <style>
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 2/3;
@@ -41,7 +48,7 @@ const show = index <= date - 1 ? null : 'opaque'
   }
   .striped-box {
     padding: 10px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     background: repeating-linear-gradient(
       45deg,
       #f25434,
@@ -53,8 +60,8 @@ const show = index <= date - 1 ? null : 'opaque'
   .link-card {
     list-style: none;
 
-    color: #f2e8cf;
-    /* background-color: #386641; */
+    color: #f25434;
+    background-color: #73e1cd;
     /* border-radius: 7px;
     border: 10px solid #f25334; */
     position: relative;
@@ -78,7 +85,7 @@ const show = index <= date - 1 ? null : 'opaque'
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    color: #156556;
     font-size: 6rem;
   }
 </style>

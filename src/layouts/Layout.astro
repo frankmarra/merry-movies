@@ -13,6 +13,10 @@ const { title } = Astro.props
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500&f[]=melodrama@600&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
@@ -69,13 +73,25 @@ const { title } = Astro.props
       }
       .button {
         background: #f25434;
-        color: white;
+        color: #f6f3e0;
         border-radius: 7px;
-        padding: 7px;
+        padding-block: 7px;
+        padding-inline: 15px;
         transition: 0.3s;
+        border: 5px solid transparent;
       }
       .button:hover {
-        background: #ff9883;
+        border: 5px dotted #f25434;
+        background-color: #f6f3e0;
+        color: #f25434;
+        /* background: #ff9883; */
+        /* background: repeating-linear-gradient(
+          -45deg,
+          #f25434,
+          #73e1cd 10px,
+          #f25434 10px,
+          #73e1cd 20px
+        ); */
       }
     </style>
   </body>

@@ -8,25 +8,27 @@ const today = new Date()
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Welcome to Merry Movies!</h1>
+    <div class="calendar-border">
+      <h1>Welcome to Merry Movies!</h1>
 
-    <ul role="list" class="link-card-grid">
-      {
-        movies.map((movie, index) => (
-          <Card
-            slug={movie.slug}
-            title={movie.title}
-            plot={movie.plot}
-            poster={movie.poster}
-            rated={movie.rated}
-            year={movie.year}
-            index={index}
-            key={movie.title}
-            date={today.getDate()}
-          />
-        ))
-      }
-    </ul>
+      <ul role="list" class="link-card-grid">
+        {
+          movies.map((movie, index) => (
+            <Card
+              slug={movie.slug}
+              title={movie.title}
+              plot={movie.plot}
+              poster={movie.poster}
+              rated={movie.rated}
+              year={movie.year}
+              index={index}
+              key={movie.title}
+              date={today.getDate()}
+            />
+          ))
+        }
+      </ul>
+    </div>
   </main>
 </Layout>
 
@@ -35,17 +37,16 @@ const today = new Date()
     margin: auto;
     padding: 1rem;
     /* width: min(1400px, 100% - 2rem); */
-
-    color: #5dc6b2;
+    font-family: 'Melodrama';
+    color: #156556;
     font-size: 20px;
     line-height: 1.6;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    margin-bottom: 1em;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
@@ -54,10 +55,15 @@ const today = new Date()
     background-size: 400%;
     background-position: 0%;
   }
-
+  .calendar-border {
+    border: 10px dotted #f25434;
+    margin: 1rem;
+    padding: 2rem;
+    height: 100vh;
+  }
   .link-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     gap: 3rem;
     padding-inline: 10vw;
   }

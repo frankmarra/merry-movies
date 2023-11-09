@@ -31,7 +31,7 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
               <p>Rated: {rated}</p>
               <p>{year}</p>
             </div>
-            <p>{plot}</p>
+            <p class="plot">{plot}</p>
             <div class="links">
               <a href="/" class="button">Back</a>
               <a href={watch} class="button">Where to watch</a>
@@ -48,19 +48,21 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
 
 <style>
   main {
-    color: #5dc6b2;
-    font-size: 20px;
     line-height: 1.6;
+    padding: 16px;
   }
   h2 {
-    font-family: 'cheeseDonut';
+    padding-inline-end: 1rem;
+    font-family: 'Melodrama';
     font-size: 3.5rem;
   }
   .page-grid {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     height: 100vh;
     align-content: center;
+    border: 10px dotted #f25434;
+    margin: 1rem;
   }
   .striped-box {
     grid-column: 2/2;
@@ -75,23 +77,34 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
   }
   .info-box {
     display: flex;
-    /* grid-column: 2/2; */
-    /* border: 10px solid #f25334; */
-    /* border-radius: 7px; */
-    background: #5dc6b2;
-    margin: 3%;
+    /* background: #5dc6b2; */
+    background: #73e1cd;
+    margin: 2rem;
     clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
   }
-  .poster {
+  /* img {
     height: 60vh;
+    max-width: 100%;
+  } */
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+    vertical-align: bottom;
   }
   .movie-info {
-    color: black;
+    color: #156556;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline-start: 2rem;
-    width: 55ch;
+    padding-inline-start: 2.75rem;
+    max-width: 70ch;
+    font-family: 'General Sans', sans-serif;
+    font-size: 22px;
+  }
+  .movie-info > * + * {
+    margin-block-start: 1.3rem;
   }
   .rating-year {
     display: flex;
@@ -99,7 +112,15 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
   .rating-year p {
     padding-inline-end: 2rem;
   }
-
+  .plot {
+    max-width: 40ch;
+    padding-inline-end: 1rem;
+  }
+  .links {
+    display: flex;
+    font-family: 'Melodrama';
+    font-size: 1.3rem;
+  }
   .links a {
     margin-inline-end: 2vw;
   }
@@ -114,4 +135,61 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
     border-radius: 50%;
     margin-inline-start: 100px;
   } */
+
+  @media only screen and (max-width: 787px) {
+    .striped-box {
+      grid-column: 2/2;
+      background: repeating-linear-gradient(
+        45deg,
+        #f25434,
+        #f25434 10px,
+        #ffab9a 10px,
+        #ffab9a 20px
+      );
+      clip-path: polygon(
+        20% 0px,
+        80% 0px,
+        100% 14%,
+        100% 100%,
+        0px 100%,
+        0px 14%
+      );
+    }
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      background: #73e1cd;
+      margin: 3%;
+      clip-path: polygon(
+        20% 0px,
+        80% 0px,
+        100% 14%,
+        100% 100%,
+        0px 100%,
+        0px 14%
+      );
+      align-items: center;
+    }
+    .movie-info {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 2rem;
+      max-width: 55ch;
+      font-family: 'General Sans', sans-serif;
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    img {
+      max-width: 50%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 2/3;
+      vertical-align: bottom;
+      text-align: center;
+    }
+  }
 </style>
