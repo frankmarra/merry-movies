@@ -8,7 +8,7 @@ const today = new Date()
 
 <Layout title="Welcome to Astro.">
   <main>
-    <div class="calendar-border">
+    <div class="calendar-border" transition:name="calendar-border-box">
       <h1>Welcome to Merry Movies!</h1>
 
       <ul role="list" class="link-card-grid">
@@ -59,12 +59,37 @@ const today = new Date()
     border: 10px dotted #f25434;
     margin: 1rem;
     padding: 2rem;
-    height: 100vh;
+    overflow-y: scroll;
+    height: 80vh;
   }
   .link-card-grid {
+    --min: 125px;
+    --gap: 1rem;
+    margin-top: 5rem;
     display: grid;
+    grid-gap: var(--gap);
+    /* min() with 100% prevents overflow
+  in extra narrow spaces */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    gap: 3rem;
-    padding-inline: 10vw;
+    gap: 3rem; */
+    padding-inline: 1rem;
+  }
+
+  @media only screen and (max-width: 787px) {
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+    .calendar-border {
+      border: 10px dotted #f25434;
+      margin: 0.1rem;
+      padding: 2rem;
+      /* height: 100vh; */
+    }
   }
 </style>

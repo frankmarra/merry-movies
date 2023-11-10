@@ -53,19 +53,20 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
   }
   h2 {
     padding-inline-end: 1rem;
+    text-wrap: pretty;
     font-family: 'Melodrama';
     font-size: 3.5rem;
   }
   .page-grid {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    height: 100vh;
-    align-content: center;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    /* height: 100vh; */
+    place-content: center;
     border: 10px dotted #f25434;
     margin: 1rem;
   }
   .striped-box {
-    grid-column: 2/2;
+    /* grid-column: 2/2; */
     background: repeating-linear-gradient(
       45deg,
       #f25434,
@@ -98,8 +99,10 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline-start: 2.75rem;
-    max-width: 70ch;
+    /* padding-inline-start: 2.75rem; */
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+    width: min(100% - 3rem, var(--container-max, 50ch));
+    margin-inline: auto;
     font-family: 'General Sans', sans-serif;
     font-size: 22px;
   }
@@ -137,8 +140,18 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
   } */
 
   @media only screen and (max-width: 787px) {
+    .page-grid {
+      display: flex;
+      flex-direction: column;
+      /* grid-template-columns: 1fr 4fr 1fr; */
+      /* grid-template-rows: 1fr 4fr 1fr; */
+      /* height: 100vh; */
+      align-items: center;
+      border: 10px dotted #f25434;
+      margin: 0.1rem;
+    }
     .striped-box {
-      grid-column: 2/2;
+      /* grid-column: 2/2; */
       background: repeating-linear-gradient(
         45deg,
         #f25434,
@@ -154,6 +167,9 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
         0px 100%,
         0px 14%
       );
+      width: 300px;
+      margin: 3rem;
+      padding: 1rem clamp(0.5rem, 2%, 3rem);
     }
     .info-box {
       display: flex;
@@ -171,14 +187,16 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
       align-items: center;
     }
     .movie-info {
-      color: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 1rem 2rem;
+      /* padding: 0; */
       max-width: 55ch;
       font-family: 'General Sans', sans-serif;
       font-size: 14px;
+    }
+    .movie-info > * + * {
+      margin-block-start: 0.5rem;
     }
     h2 {
       font-size: 1.5rem;
@@ -190,6 +208,15 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
       aspect-ratio: 2/3;
       vertical-align: bottom;
       text-align: center;
+    }
+    .links {
+      flex-direction: column;
+    }
+    .button {
+      font-size: 14px;
+      margin-block: 0.5rem;
+      padding-block: 0;
+      padding-inline: 1rem;
     }
   }
 </style>
