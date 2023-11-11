@@ -71,6 +71,24 @@ const { title } = Astro.props
           Courier New,
           monospace;
       }
+      body {
+        --border-size: 1rem;
+        /* min-height: 100vh; */
+        /* margin: 1.5rem clamp(1rem, 5%, 2rem); */
+        padding: calc(var(--border-size) * 2);
+        /* overflow: hidden; */
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        border: 10px dotted #ffab9a;
+        height: calc(100% - var(--border-size) * 3.5);
+        width: calc(100% - var(--border-size) * 3.5);
+        /* margin: 1.5rem clamp(1rem, 5%, 2rem); */
+        /* z-index: 1; */
+      }
       .button {
         background: #f25434;
         color: #f6f3e0;
@@ -79,6 +97,7 @@ const { title } = Astro.props
         padding-inline: 15px;
         transition: 0.3s;
         border: 5px solid transparent;
+        text-align: center;
       }
       .button:hover {
         border: 5px dotted #f25434;

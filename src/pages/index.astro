@@ -8,9 +8,8 @@ const today = new Date()
 
 <Layout title="Welcome to Astro.">
   <main>
+    <h1>Welcome to Merry Movies!</h1>
     <div class="calendar-border" transition:name="calendar-border-box">
-      <h1>Welcome to Merry Movies!</h1>
-
       <ul role="list" class="link-card-grid">
         {
           movies.map((movie, index) => (
@@ -41,12 +40,19 @@ const today = new Date()
     color: #156556;
     font-size: 20px;
     line-height: 1.6;
+
+    /* overflow-y: scroll; */
   }
+
   h1 {
     font-size: 5rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
+    color: #156556;
+    font-family: 'Melodrama';
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+    position: sticky;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
@@ -56,21 +62,24 @@ const today = new Date()
     background-position: 0%;
   }
   .calendar-border {
-    border: 10px dotted #f25434;
+    /* border: 10px dotted #ffab9a; */
     margin: 1rem;
     padding: 2rem;
     overflow-y: scroll;
-    height: 80vh;
+    /* height: 80vh; */
   }
   .link-card-grid {
-    --min: 125px;
+    --min: 200px;
     --gap: 1rem;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     display: grid;
     grid-gap: var(--gap);
     /* min() with 100% prevents overflow
   in extra narrow spaces */
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(100%, var(--min)), 1fr)
+    );
 
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
@@ -80,16 +89,13 @@ const today = new Date()
 
   @media only screen and (max-width: 787px) {
     h1 {
-      font-size: 2.75rem;
-      font-weight: 700;
-      line-height: 1;
-      text-align: center;
+      font-size: 3rem;
     }
-    .calendar-border {
+    /* .calendar-border {
       border: 10px dotted #f25434;
       margin: 0.1rem;
       padding: 2rem;
-      /* height: 100vh; */
-    }
+     
+    } */
   }
 </style>
