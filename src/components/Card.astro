@@ -6,37 +6,31 @@ const show = index <= date - 1 ? null : 'opaque'
 
 <li class="striped-box" transition:name={`striped-box-${slug}`}>
   <div class="link-card">
-    <a href={!show ? `/${slug}` : '#'}>
-      <!-- <img
-        src={poster}
-        alt={title}
-        class={show}
-        transition:name={`img-${slug}`}
-      /> -->
-      <img
-        src={poster}
-        alt={title}
-        transition:name={`img-${slug}`}
-        class="opaque"
-      />
-      <!-- <p class={show == null ? 'opaque' : null}>{index + 1}</p> -->
-      <p class="">{index + 1}</p>
-    </a>
+    <div class="link-card-inner">
+      <div class="link-card-front">
+        <!-- <p class={show == null ? 'opaque' : null}>{index + 1}</p> -->
+        <p class="">{index + 1}</p>
+      </div>
+      <div class="link-card-back">
+        <a href={!show ? `/${slug}` : '#'}>
+          <img
+            src={poster}
+            alt={title}
+            class={show}
+            transition:name={`img-${slug}`}
+          />
+          <!-- <img
+            src={poster}
+            alt={title}
+            transition:name={`img-${slug}`}
+            class="opaque"
+          /> -->
+        </a>
+      </div>
+    </div>
   </div>
 </li>
 
-<!-- <script>
-  import { navigate } from 'astro/transitions/router'
-
-  const cards = document.querySelectorAll('li.striped-box')
-  
-
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      // navigate(slug)
-    })
-  })
-</script> -->
 <style>
   img {
     max-width: 100%;
@@ -47,7 +41,6 @@ const show = index <= date - 1 ? null : 'opaque'
   }
   .striped-box {
     padding: 10px;
-    /* border-radius: 7px; */
     background: repeating-linear-gradient(
       45deg,
       #f25434,
@@ -55,6 +48,7 @@ const show = index <= date - 1 ? null : 'opaque'
       #ffab9a 5px,
       #ffab9a 10px
     );
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.301);
   }
   .link-card {
     list-style: none;
@@ -71,6 +65,29 @@ const show = index <= date - 1 ? null : 'opaque'
       #f5f4de 10%,
       #f24d2d 20%
     ); */
+    perspective: 1000px;
+  }
+  .link-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .link-card:hover .link-card-inner {
+    transform: rotateY(180deg);
+  }
+  .link-card-front,
+  .link-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .link-card-front {
+    background-color: #73e1cd;
+  }
+  .link-card-back {
+    transform: rotateY(180deg);
   }
   .opaque {
     opacity: 0;
