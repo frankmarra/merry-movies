@@ -8,7 +8,6 @@ const today = new Date()
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Welcome to Merry Movies!</h1>
     <div class="calendar-border" transition:name="calendar-border-box">
       <ul role="list" class="link-card-grid">
         {
@@ -40,20 +39,10 @@ const today = new Date()
     color: #156556;
     font-size: 20px;
     line-height: 1.6;
-
+    /* overflow: auto; */
     /* overflow-y: scroll; */
   }
 
-  h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    color: #156556;
-    font-family: 'Melodrama';
-    padding: 1.5rem clamp(1rem, 5%, 3rem);
-    position: sticky;
-  }
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -65,8 +54,7 @@ const today = new Date()
     /* border: 10px dotted #ffab9a; */
     margin: 1rem;
     padding: 2rem;
-    overflow-y: scroll;
-    /* height: 80vh; */
+    overflow: auto;
   }
   .link-card-grid {
     --min: 200px;
@@ -85,6 +73,8 @@ const today = new Date()
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
     gap: 3rem; */
     padding-inline: 1rem;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
   }
 
   @media only screen and (max-width: 787px) {

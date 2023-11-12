@@ -22,7 +22,10 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body>
-    <slot />
+    <header><h1>Welcome to Merry Movies!</h1></header>
+    <div class="container">
+      <slot />
+    </div>
     <style is:global>
       @font-face {
         font-family: 'CheeseDonut';
@@ -76,18 +79,29 @@ const { title } = Astro.props
         /* min-height: 100vh; */
         /* margin: 1.5rem clamp(1rem, 5%, 2rem); */
         padding: calc(var(--border-size) * 2);
-        /* overflow: hidden; */
       }
       body::before {
         content: '';
         position: fixed;
         top: 1rem;
         left: 1rem;
+
         border: 10px dotted #ffab9a;
         height: calc(100% - var(--border-size) * 3.5);
         width: calc(100% - var(--border-size) * 3.5);
         /* margin: 1.5rem clamp(1rem, 5%, 2rem); */
         /* z-index: 1; */
+      }
+      header {
+      }
+      h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        color: #156556;
+        font-family: 'Melodrama';
+        padding: 1.5rem clamp(1rem, 5%, 3rem);
       }
       .button {
         background: #f25434;
@@ -111,6 +125,19 @@ const { title } = Astro.props
           #f25434 10px,
           #73e1cd 20px
         ); */
+      }
+      @media only screen and (max-width: 787px) {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    </style>
+    <style>
+      .container {
+        position: fixed;
+        height: calc(100% - var(--border-size) * 13);
+        width: calc(100% - var(--border-size) * 5);
+        overflow-y: scroll;
       }
     </style>
   </body>
