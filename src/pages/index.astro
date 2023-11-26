@@ -27,6 +27,12 @@ const today = new Date()
         }
       </ul>
     </div>
+    <div class="mobile-buttons">
+      <a href="#1" class="button">Week One</a>
+      <a href="#10" class="button">Week Two</a>
+      <a href="#17" class="button">Week Three</a>
+      <a href="#24" class="button">Week Four</a>
+    </div>
   </main>
 </Layout>
 
@@ -41,6 +47,7 @@ const today = new Date()
     line-height: 1.6;
     /* overflow: auto; */
     /* overflow-y: scroll; */
+    height: 100%;
   }
 
   .text-gradient {
@@ -55,11 +62,11 @@ const today = new Date()
     margin: 1rem;
     padding: 2rem;
     overflow: auto;
+    /* height: 100%; */
   }
   .link-card-grid {
     --min: 200px;
     --gap: 1rem;
-    /* margin-top: 5rem; */
     display: grid;
     grid-gap: var(--gap);
     /* min() with 100% prevents overflow
@@ -68,18 +75,33 @@ const today = new Date()
       auto-fill,
       minmax(min(100%, var(--min)), 1fr)
     );
-
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    gap: 3rem; */
     padding-inline: 1rem;
-    /* overflow: hidden; */
-    /* overflow-y: scroll; */
+  }
+
+  .mobile-buttons {
+    display: none;
   }
 
   @media only screen and (max-width: 787px) {
     h1 {
       font-size: 3rem;
+    }
+
+    .link-card-grid {
+      --min: 200px;
+      --gap: 5rem;
+      display: grid;
+      grid-gap: var(--gap);
+      /* min() with 100% prevents overflow
+  in extra narrow spaces */
+      align-items: center;
+      /* justify-content: center; */
+      grid-auto-flow: column;
+      grid-auto-columns: 100%;
+      grid-template-columns: unset;
+      padding-inline: 1rem;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 50%;
     }
     /* .calendar-border {
       border: 10px dotted #f25434;
@@ -87,5 +109,13 @@ const today = new Date()
       padding: 2rem;
      
     } */
+    .mobile-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem;
+      /* width: 90%; */
+      margin-inline: 1.5rem;
+      justify-content: center;
+    }
   }
 </style>

@@ -9,31 +9,13 @@
     "watch": "https://www.justwatch.com/us/movie/the-nightmare-before-christmas"
   },
   {
-    "title": "Love Actually",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNThkNjgxNGQtOTIxMy00ZTFmLWIwMDItYzE5YzM3ZDMzNDE3XkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_SX300.jpg",
-    "rated": "R",
-    "year": "2003",
-    "plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
-    "slug": "12-02",
-    "watch": "https://www.justwatch.com/us/movie/love-actually"
-  },
-  {
-    "title": "Little Women",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNzY2M2IzNWMtMWFkMS00ODk1LWI3NGYtNTBiYTc5MTA0Y2YzXkEyXkFqcGdeQXVyNDA5NTgxNjU@._V1_SX300.jpg",
+    "title": "Home Alone",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
     "rated": "PG",
-    "year": "1994",
-    "plot": "The March sisters live and grow in post-Civil War America.",
-    "slug": "12-03",
-    "watch": "https://www.justwatch.com/us/movie/little-women-1994"
-  },
-  {
-    "title": "Bad Santa",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjA4Njg1MDcwN15BMl5BanBnXkFtZTYwMzAxNjM3._V1_SX300.jpg",
-    "rated": "R",
-    "year": "2003",
-    "plot": "A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.",
-    "slug": "12-04",
-    "watch": "https://www.justwatch.com/us/movie/badder-santa"
+    "year": "1990",
+    "plot": "An eight-year-old troublemaker, mistakenly left home alone, must defend his home against a pair of burglars on Christmas eve.",
+    "slug": "12-02",
+    "watch": "https://www.justwatch.com/us/movie/home-alone"
   },
   {
     "title": "Elf",
@@ -41,8 +23,44 @@
     "rated": "PG",
     "year": "2003",
     "plot": "Raised as an oversized elf, Buddy travels from the North Pole to New York City to meet his biological father, Walter Hobbs, who doesn't know he exists and is in desperate need of some Christmas spirit.",
-    "slug": "12-05",
+    "slug": "12-03",
     "watch": "https://www.justwatch.com/us/movie/elf"
+  },
+  {
+    "title": "Miracle on 34th Street",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRkOGEwYTUtY2E5Yy00ODg4LTk2ZWItY2IyMzUxOGVhMTM1XkEyXkFqcGdeQXVyNDk0MDg4NDk@._V1_SX300.jpg",
+    "rated": "Not Rated",
+    "year": "1947",
+    "plot": "After a divorced New York mother hires a nice old man to play Santa Claus at Macy's, she is startled by his claim to be the actual Santa Clause.",
+    "slug": "12-04",
+    "watch": "https://www.justwatch.com/us/movie/miracle-on-34th-street"
+  },
+  {
+    "title": "Happiest Season",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDgyZDNiZGEtYmQ4NC00NzU5LTllODQtNjIwMGY2NDYyNGQwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "year": "2020",
+    "plot": "A holiday romantic comedy that captures the range of emotions tied to wanting your family's acceptance, being true to yourself, and trying not to ruin Christmas.",
+    "slug": "12-05",
+    "watch": "https://www.justwatch.com/us/movie/happiest-season"
+  },
+  {
+    "title": "The Muppet Christmas Carol",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDgyZDNiZGEtYmQ4NC00NzU5LTllODQtNjIwMGY2NDYyNGQwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "rated": "G",
+    "year": "1992",
+    "plot": "The Muppets present their own touching rendition of Charles Dickens' classic tale.",
+    "slug": "12-06",
+    "watch": "https://www.justwatch.com/us/movie/the-muppet-christmas-carol"
+  },
+  {
+    "title": "Eight Crazy Nights",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk1NTU4NjE5OV5BMl5BanBnXkFtZTYwMTQ3OTY2._V1_SX300.jpg",
+    "rated": "PG-13",
+    "year": "2002",
+    "plot": "Davey Stone, an alcoholic with a criminal record, is sentenced to community service under the supervision of an elderly referee. Davey is then faced with trying to reform and abandon his bad habits.",
+    "slug": "12-07",
+    "watch": "https://www.justwatch.com/us/movie/adam-sandlers-eight-crazy-nights"
   },
   {
     "title": "National Lampoon's Christmas Vacation",
@@ -50,8 +68,116 @@
     "rated": "PG-13",
     "year": "1989",
     "plot": "The Griswold family's plans for a big family Christmas predictably turn into a big disaster.",
-    "slug": "12-06",
+    "slug": "12-08",
     "watch": "https://www.justwatch.com/us/movie/national-lampoons-christmas-vacation"
+  },
+  {
+    "title": "The Grinch/Frosty/Charlie Brown Christmas",
+    "poster": "https://res.cloudinary.com/silverbeard/image/upload/v1701037103/GrinchFrostyCharlie_qjxops.png",
+    "rated": "TV-G",
+    "year": "1966/1969/1965",
+    "plot": "Triple feature of three animated Christmas Classics!",
+    "slug": "12-09",
+    "watch": "https://www.justwatch.com/us/lists/my-lists?inner_tab=custom_lists&list_id=tl-us-be811538-1417-4672-aace-d96449563541"
+  },
+  {
+    "title": "The Santa Clause",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTZlNzk1MjItYjJlYy00MTAxLWJkNjEtZmNiNmVlNjQ4NDE5XkEyXkFqcGdeQXVyMzI0NDc4ODY@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1994",
+    "plot": "When a man inadvertently makes Santa fall off his roof on Christmas Eve, he finds himself magically recruited to take his place.",
+    "slug": "12-10",
+    "watch": "https://www.justwatch.com/us/movie/the-santa-clause"
+  },
+  {
+    "title": "Gremlins",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDNlZWYyNTctMDk0Ni00MGI2LWFlOTQtY2M0YWZkZDY4ZjJiXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1984",
+    "plot": "A young man inadvertently breaks three important rules concerning his new pet and unleashes a horde of malevolently mischievous monsters on a small town.",
+    "slug": "12-11",
+    "watch": "https://www.justwatch.com/us/movie/gremlins-1"
+  },
+  {
+    "title": "The Year Without a Santa Claus",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzk5OGFmMmQtNGVhZC00NGQ5LWE2M2MtZmRlYzZiNjYwMzM4XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_SX300.jpg",
+    "rated": "TV-G",
+    "year": "1974",
+    "plot": "When a weary and discouraged Santa Claus considers skipping his Christmas Eve run one year, Mrs. Claus and his elves set out to change his mind.",
+    "slug": "12-12",
+    "watch": "https://www.justwatch.com/us/movie/the-year-without-a-santa-claus"
+  },
+  {
+    "title": "Bad Santa",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA4Njg1MDcwN15BMl5BanBnXkFtZTYwMzAxNjM3._V1_SX300.jpg",
+    "rated": "R",
+    "year": "2003",
+    "plot": "A miserable conman and his partner pose as Santa and his Little Helper to rob department stores on Christmas Eve. But they run into problems when the conman befriends a troubled kid.",
+    "slug": "12-13",
+    "watch": "https://www.justwatch.com/us/movie/badder-santa"
+  },
+  {
+    "title": "Santa Claus Is Comin' to Town",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc2NjMxMTU2Ml5BMl5BanBnXkFtZTcwNjg4NTYyMQ@@._V1_SX300.jpg",
+    "rated": "TV-G",
+    "year": "1970",
+    "plot": "A mailman reveals the origin of Santa Claus.",
+    "slug": "12-14",
+    "watch": "https://www.justwatch.com/us/movie/santa-claus-is-comin-to-town"
+  },
+  {
+    "title": "Scrooged",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2NlMDQzMDktNTMyZS00MjBjLWI0MmEtMzgzZDM2ZTVkNzE1XkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "year": "1988",
+    "plot": "A selfish, cynical television executive is haunted by three spirits bearing lessons on Christmas Eve.",
+    "slug": "12-15",
+    "watch": "https://www.justwatch.com/us/movie/scrooged"
+  },
+  {
+    "title": "The Polar Express",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_SX300.jpg",
+    "rated": "G",
+    "year": "2004",
+    "plot": "On Christmas Eve, a young boy embarks on a magical adventure to the North Pole on the Polar Express, while learning about friendship, bravery, and the spirit of Christmas.",
+    "slug": "12-16",
+    "watch": "https://www.justwatch.com/us/movie/the-polar-express"
+  },
+  {
+    "title": "Rudolph the Red-Nosed Reindeer",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjdjZjkyYjUtOWJiZC00ZTE2LTk4MDktZjliOTk5ZDk5ZTZhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+    "rated": "TV-G",
+    "year": "1964",
+    "plot": "A young reindeer Rudolph lives at the North Pole. His father is one of Santa's reindeer and it is expected that Rudolph will eventually be one too. However, he has a feature which is a setback and causes him to be ostracized: his red nose.",
+    "slug": "12-17",
+    "watch": "https://www.justwatch.com/us/movie/rudolph-the-red-nosed-reindeer"
+  },
+  {
+    "title": "Mixed Nuts",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2Y3OTk4ZmMtYWMwNC00OTQ3LTg4OWEtNDNiNTVlODc0ZDc2XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "year": "1994",
+    "plot": "The events focus around a crisis hotline business on one crazy night during the Christmas holidays.",
+    "slug": "12-18",
+    "watch": "https://www.justwatch.com/us/movie/rudolph-the-red-nosed-reindeer"
+  },
+  {
+    "title": "Love Actually",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNThkNjgxNGQtOTIxMy00ZTFmLWIwMDItYzE5YzM3ZDMzNDE3XkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_SX300.jpg",
+    "rated": "R",
+    "year": "2003",
+    "plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
+    "slug": "12-19",
+    "watch": "https://www.justwatch.com/us/movie/love-actually"
+  },
+  {
+    "title": "Klaus",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWYwOThjM2ItZGYxNy00NTQwLWFlZWEtM2MzM2Q5MmY3NDU5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "2019",
+    "plot": "A simple act of kindness always sparks another, even in a frozen, faraway place. When Smeerensburg's new postman, Jesper, befriends toymaker Klaus, their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.",
+    "slug": "12-20",
+    "watch": "https://www.justwatch.com/us/movie/klaus"
   },
   {
     "title": "White Christmas",
@@ -59,8 +185,35 @@
     "rated": "Not Rated",
     "year": "1954",
     "plot": "A successful song-and-dance team become romantically involved with a sister act and team up to save the failing Vermont inn of their former commanding general.",
-    "slug": "12-07",
+    "slug": "12-21",
     "watch": "https://www.justwatch.com/us/movie/white-christmas"
+  },
+  {
+    "title": "A Christmas Story",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWMyNjE0MzEtMzVjNy00NjIxLTg0ZjMtMWJhNGI1YmVjYTczL2ltYWdlXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1983",
+    "plot": "In the 1940s, a young boy named Ralphie Parker attempts to convince his parents, teacher, and Santa Claus that a Red Ryder Range 200 Shot BB gun really is the perfect Christmas gift.",
+    "slug": "12-22",
+    "watch": "https://www.justwatch.com/us/movie/a-christmas-story-1983"
+  },
+  {
+    "title": "Santa Claus: The Movie",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDc1OGVkMmQtYTU0NC00ZTc4LWIyNjItM2IzYzcwNTA1ZmJmXkEyXkFqcGdeQXVyMjY3MjUzNDk@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1985",
+    "plot": "The legend of Santa Claus is put in jeopardy when an unscrupulous toy manufacturer attempts to take over Christmas.",
+    "slug": "12-23",
+    "watch": "https://www.justwatch.com/us/movie/santa-claus-the-movie"
+  },
+  {
+    "title": "It's a Wonderful Life",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1947",
+    "plot": "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.",
+    "slug": "12-24",
+    "watch": "https://www.justwatch.com/us/movie/frank-capras-its-a-wonderful-life"
   },
   {
     "title": "Die Hard",
@@ -71,14 +224,67 @@
     "slug": "12-25",
     "watch": "https://www.justwatch.com/us/movie/die-hard-1988"
   },
-
   {
-    "title": "The Year Without a Santa Claus",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzk5OGFmMmQtNGVhZC00NGQ5LWE2M2MtZmRlYzZiNjYwMzM4XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_SX300.jpg",
+    "title": "Just Friends",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA0Mzg2NjUzMl5BMl5BanBnXkFtZTcwNDg2ODUzMQ@@._V1_SX300.jpg",
+    "rated": "PG-13",
+    "year": "2015",
+    "plot": "While visiting his hometown during Christmas, a man comes face-to-face with his old high-school crush and best friend--a woman whose rejection of him turned him into a ferocious womanizer.",
+    "slug": "12-26",
+    "watch": "https://www.justwatch.com/us/movie/just-friends"
+  },
+  {
+    "title": "Trading Places",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGVjNTBiYWUtY2MwOC00NTg1LWJiNWMtNzM5MTBkYzE5NjQxXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_SX300.jpg",
+    "rated": "R",
+    "year": "1983",
+    "plot": "A snobbish investor and a wily street con artist find their positions reversed as part of a bet by two callous millionaires.",
+    "slug": "12-27",
+    "watch": "https://www.justwatch.com/us/movie/trading-places"
+  },
+  {
+    "title": "Lethal Weapon",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTllNWNlZjctMWQwMS00ZDc3LTg5ZjMtNzhmNzhjMmVhYTFlXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_SX300.jpg",
+    "rated": "R",
+    "year": "1987",
+    "plot": "Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers.",
+    "slug": "12-28",
+    "watch": "https://www.justwatch.com/us/movie/lethal-weapon"
+  },
+  {
+    "title": "Holiday Inn",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUyODU0OTUwMF5BMl5BanBnXkFtZTgwMTE4NTQzMjE@._V1_SX300.jpg",
+    "rated": "Not Rated",
+    "year": "1942",
+    "plot": "At an inn which is open only on holidays, a crooner and a hoofer vie for the affections of a beautiful up-and-coming performer.",
+    "slug": "12-29",
+    "watch": "https://www.justwatch.com/us/movie/holiday-inn"
+  },
+  {
+    "title": "Rudolph's Shiny New Year",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmNhMGVlZDMtNTA2OC00YmEzLTg2M2ItYjY3MzU5Y2JiNGJlXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_SX300.jpg",
     "rated": "TV-G",
-    "year": "1974",
-    "plot": "When a weary and discouraged Santa Claus considers skipping his Christmas Eve run one year, Mrs. Claus and his elves set out to change his mind.",
-    "slug": "the-year-without-a-santa-claus",
-    "watch": "https://www.justwatch.com/us/movie/the-year-without-a-santa-claus"
+    "year": "1976",
+    "plot": "Rudolph must find Happy, the baby New Year, before midnight on New Year's Eve.",
+    "slug": "12-30",
+    "watch": "https://www.justwatch.com/us/movie/rudolphs-shiny-new-year"
+  },
+  {
+    "title": "When Harry Met Sally...",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg",
+    "rated": "R",
+    "year": "1989",
+    "plot": "Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship.",
+    "slug": "12-31",
+    "watch": "https://www.justwatch.com/us/movie/when-harry-met-sally"
+  },
+  {
+    "title": "Twilight Zone: The Movie",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ2NzgzYjEtMzAxNy00MzhkLWE5ZTUtZDA1ODY3MTBjOTRiXkEyXkFqcGdeQXVyNTAyNDQ2NjI@._V1_SX300.jpg",
+    "rated": "PG",
+    "year": "1983",
+    "plot": "Four horror and science fiction segments, directed by four famous directors, each of them being a new version of a classic story from Rod Serling's landmark television series.",
+    "slug": "1-01",
+    "watch": "https://www.justwatch.com/us/movie/twilight-zone-the-movie"
   }
 ]

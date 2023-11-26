@@ -48,9 +48,7 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
 
 <style>
   main {
-    line-height: 1.6;
-    padding: 16px;
-    overflow: hidden;
+    height: 100%;
   }
   h2 {
     padding-inline-end: 1rem;
@@ -64,10 +62,10 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
     /* grid-template-columns: 1fr 4fr 1fr; */
     /* height: 75vh; */
     place-items: center;
+    justify-content: center;
     /* border: 10px dotted #ffab9a; */
     margin: 1rem;
-
-    overflow: hidden;
+    height: 100%;
   }
   .striped-box {
     /* grid-column: 2/2; */
@@ -80,7 +78,7 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
     );
     clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
     box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.301);
-    max-width: 60%;
+    max-width: 90%;
   }
   .info-box {
     display: flex;

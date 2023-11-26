@@ -134,10 +134,16 @@ const { title } = Astro.props
     </style>
     <style>
       .container {
+        --mask: linear-gradient(#000 0 0) 50% / calc(100% - 55.5px)
+            calc(100% - 55.5px) no-repeat,
+          radial-gradient(farthest-side, #000 98%, #0000) 0 0/60px 60px round;
         position: fixed;
         height: calc(100% - var(--border-size) * 13);
         width: calc(100% - var(--border-size) * 4.3);
         overflow-y: scroll;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+        background-color: #156556;
       }
     </style>
   </body>

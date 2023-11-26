@@ -4,21 +4,45 @@ const { slug, title, poster, rated, year, plot, index, date } = Astro.props
 const show = index <= date - 1 ? null : 'opaque'
 ---
 
-<li class="striped-box" transition:name={`striped-box-${slug}`}>
+<li class="striped-box" transition:name={`striped-box-${slug}`} id={index + 1}>
   <div class="link-card">
     <div class="link-card-inner">
       <div class="link-card-front">
         <!-- <p class={show == null ? 'opaque' : null}>{index + 1}</p> -->
-        <p class="">{index + 1}</p>
+        {
+          index + 1 == 32 ? (
+            <p class="new-year">Happy New Year</p>
+          ) : (
+            <p>{index + 1}</p>
+          )
+        }
       </div>
       <div class="link-card-back">
         <a href={!show ? `/${slug}` : '#'}>
-          <img
-            src={poster}
-            alt={title}
-            class={show}
-            transition:name={`img-${slug}`}
-          />
+          {
+            !show ? (
+              <img
+                src={poster}
+                alt={title}
+                class={show}
+                transition:name={`img-${slug}`}
+              />
+            ) : (
+              <>
+                <>
+                  <img
+                    src={poster}
+                    alt={title}
+                    class={show}
+                    transition:name={`img-${slug}`}
+                  />
+
+                  <p class="come-back">Coming Soon. Don't Be Naughty!</p>
+                </>
+              </>
+            )
+          }
+
           <!-- <img
             src={poster}
             alt={title}
@@ -49,12 +73,13 @@ const show = index <= date - 1 ? null : 'opaque'
       #ffab9a 10px
     );
     box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.301);
+    scroll-snap-align: start;
   }
   .link-card {
     list-style: none;
 
     color: #f25434;
-    background-color: #73e1cd;
+    background-color: transparent;
     /* border-radius: 7px;
     border: 10px solid #f25334; */
     position: relative;
@@ -69,6 +94,7 @@ const show = index <= date - 1 ? null : 'opaque'
   }
   .link-card-inner {
     position: relative;
+    background-color: #73e1cd;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -103,5 +129,11 @@ const show = index <= date - 1 ? null : 'opaque'
     transform: translate(-50%, -50%);
     color: #156556;
     font-size: 6rem;
+  }
+  .come-back {
+    font-size: 2rem;
+  }
+  .new-year {
+    font-size: 2.5rem;
   }
 </style>
