@@ -60,8 +60,7 @@ const date = today.getDate()
   }
   .calendar-border {
     /* border: 10px dotted #ffab9a; */
-    width: min(100% - 3rem, var(--container-max, 60ch));
-    margin-inline: auto;
+    margin: 1rem;
     padding: 2.5rem;
 
     /* overflow: auto; */
@@ -89,7 +88,10 @@ const date = today.getDate()
     h1 {
       font-size: 3rem;
     }
-
+    .calendar-border {
+      width: min(100% - 3rem, var(--container-max, 60ch));
+      margin-inline: auto;
+    }
     .link-card-grid {
       --min: 200px;
       --gap: 5rem;
