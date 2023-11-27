@@ -4,6 +4,7 @@ import Card from '../components/Card.astro'
 import movies from '../content/movies/movies.json'
 
 const today = new Date()
+const date = today.getDate()
 ---
 
 <Layout title="Welcome to Astro.">
@@ -21,7 +22,7 @@ const today = new Date()
               year={movie.year}
               index={index}
               key={movie.title}
-              date={today.getDate()}
+              date={date}
             />
           ))
         }
@@ -59,9 +60,11 @@ const today = new Date()
   }
   .calendar-border {
     /* border: 10px dotted #ffab9a; */
-    margin: 1rem;
-    padding: 2rem;
-    overflow: auto;
+    width: min(100% - 3rem, var(--container-max, 60ch));
+    margin-inline: auto;
+    padding: 2.5rem;
+
+    /* overflow: auto; */
     /* height: 100%; */
   }
   .link-card-grid {
@@ -97,11 +100,19 @@ const today = new Date()
       align-items: center;
       /* justify-content: center; */
       grid-auto-flow: column;
+      overflow-x: auto;
       grid-auto-columns: 100%;
       grid-template-columns: unset;
-      padding-inline: 1rem;
+      /* padding-inline: 1rem; */
       scroll-snap-type: x mandatory;
-      scroll-padding: 50%;
+      /* scroll-padding: 50%; */
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .link-card-grid > * {
+      width: min(45ch, 60vw);
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
     }
     /* .calendar-border {
       border: 10px dotted #f25434;
@@ -110,12 +121,18 @@ const today = new Date()
      
     } */
     .mobile-buttons {
+      --min: 11ch;
+      --gap: 1rem;
+
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 0.5rem;
-      /* width: 90%; */
-      margin-inline: 1.5rem;
-      justify-content: center;
+      grid-gap: var(--gap);
+      margin-inline: 5vw;
+      /* min() with 100% prevents overflow
+  in extra narrow spaces */
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, var(--min)), 1fr)
+      );
     }
   }
 </style>

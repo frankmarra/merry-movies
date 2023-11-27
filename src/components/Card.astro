@@ -2,9 +2,11 @@
 import { Image } from 'astro:assets'
 const { slug, title, poster, rated, year, plot, index, date } = Astro.props
 const show = index <= date - 1 ? null : 'opaque'
+
+let id = slug.slice(3, 5)
 ---
 
-<li class="striped-box" transition:name={`striped-box-${slug}`} id={index + 1}>
+<li class="striped-box" transition:name={`striped-box-${slug}`} id={id}>
   <div class="link-card">
     <div class="link-card-inner">
       <div class="link-card-front">
