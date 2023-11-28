@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="About | Please Rewind">
+  <main>
+    <div class="page-grid">
+      <div class="striped-box">
+        <section class="info-box">
+          <h2>Happy Holidays From April, Frank, Rool, and Franny!</h2>
+          <div class="about-copy">
+            <p>
+              We hope you enjoy our spin on the traditional Christmas advent
+              calendar. Each day, another of our favorite holiday movies are
+              revelead. Watch a new holiday movie everyday! <small
+                >(Or when time allows, because really, who has time to watch a
+                movie every day?)</small
+              >
+            </p>
+
+            <p>
+              Each year, we always say we want to send out a Christmas card, but
+              we never get around to doing it. So this year we decided to try
+              and do something a little different. We hope you all enjoy at
+              least one of the movies. We wish you and yours a happy and healthy
+              holiday season.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    height: 100%;
+  }
+  h2 {
+    padding-inline-end: 1rem;
+
+    text-wrap: pretty;
+    font-family: 'Melodrama';
+    font-size: 3.5rem;
+  }
+  .page-grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin: 1rem;
+    height: 100%;
+  }
+  .striped-box {
+    background: repeating-linear-gradient(
+      45deg,
+      #f25434,
+      #f25434 10px,
+      #ffab9a 10px,
+      #ffab9a 20px
+    );
+    clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, 0.301);
+    max-width: 90%;
+  }
+  .info-box {
+    display: flex;
+    background: #73e1cd;
+    margin: 2rem;
+    clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
+  }
+
+  .about-copy {
+    color: #156556;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+    width: min(100% - 3rem, var(--container-max, 40ch));
+    font-family: 'General Sans', sans-serif;
+    font-size: 22px;
+  }
+  .about-copy > * + * {
+    margin-block-start: 1.3rem;
+  }
+
+  @media only screen and (max-width: 787px) {
+    .page-grid {
+      display: flex;
+      flex-direction: column;
+      margin: 0.1rem;
+    }
+    .striped-box {
+      background: repeating-linear-gradient(
+        45deg,
+        #f25434,
+        #f25434 10px,
+        #ffab9a 10px,
+        #ffab9a 20px
+      );
+      clip-path: polygon(
+        20% 0px,
+        80% 0px,
+        100% 14%,
+        100% 100%,
+        0px 100%,
+        0px 14%
+      );
+      max-width: 100%;
+      width: 300px;
+      margin: 1rem;
+      padding: 1rem clamp(0.5rem, 2%, 3rem);
+    }
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      background: #73e1cd;
+      margin: 3%;
+      clip-path: polygon(
+        20% 0px,
+        80% 0px,
+        100% 14%,
+        100% 100%,
+        0px 100%,
+        0px 14%
+      );
+      align-items: center;
+      padding: 1.5rem clamp(1rem, 3%, 3rem);
+    }
+    .about-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      max-width: 55ch;
+      font-family: 'General Sans', sans-serif;
+      font-size: 16px;
+    }
+    .about-copy > * + * {
+      margin-block-start: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+  }
+</style>
