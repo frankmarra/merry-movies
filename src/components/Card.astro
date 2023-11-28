@@ -1,16 +1,13 @@
 ---
 import { Image } from 'astro:assets'
 const { slug, title, poster, rated, year, plot, index, date } = Astro.props
-const show = index <= date - 1 ? null : 'opaque'
-
-let id = slug.slice(3, 5)
+const show = slug <= date
 ---
 
-<li class="striped-box" transition:name={`striped-box-${slug}`} id={id}>
+<li class="striped-box" transition:name={`striped-box-${slug}`} id={slug}>
   <div class="link-card">
     <div class="link-card-inner">
       <div class="link-card-front">
-        <!-- <p class={show == null ? 'opaque' : null}>{index + 1}</p> -->
         {
           index + 1 == 32 ? (
             <p class="new-year">Happy New Year</p>
@@ -20,13 +17,13 @@ let id = slug.slice(3, 5)
         }
       </div>
       <div class="link-card-back">
-        <a href={!show ? `/${slug}` : '#'}>
+        <a href={show ? `/${slug}` : '#'}>
           {
-            !show ? (
+            show ? (
               <img
                 src={poster}
                 alt={title}
-                class={show}
+                class={show ? null : 'opaque'}
                 transition:name={`img-${slug}`}
               />
             ) : (
@@ -35,7 +32,7 @@ let id = slug.slice(3, 5)
                   <img
                     src={poster}
                     alt={title}
-                    class={show}
+                    class={show ? null : 'opaque'}
                     transition:name={`img-${slug}`}
                   />
 
@@ -44,13 +41,6 @@ let id = slug.slice(3, 5)
               </>
             )
           }
-
-          <!-- <img
-            src={poster}
-            alt={title}
-            transition:name={`img-${slug}`}
-            class="opaque"
-          /> -->
         </a>
       </div>
     </div>
@@ -82,16 +72,7 @@ let id = slug.slice(3, 5)
 
     color: #f25434;
     background-color: transparent;
-    /* border-radius: 7px;
-    border: 10px solid #f25334; */
     position: relative;
-    /* background: repeating-linear-gradient(
-      -45deg,
-      #5ac5ad,
-      #f5f4de 10%,
-      #f5f4de 10%,
-      #f24d2d 20%
-    ); */
     perspective: 1000px;
   }
   .link-card-inner {

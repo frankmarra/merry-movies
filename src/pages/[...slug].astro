@@ -16,7 +16,7 @@ const { title, poster, rated, year, plot, slug, watch } = Astro.props
 let id = slug.slice(3, 5)
 ---
 
-<Layout title={title}>
+<Layout title={`${title} | Please Rewind`}>
   <main>
     <div class="page-grid">
       <div class="striped-box" transition:name={`striped-box-${slug}`}>
@@ -39,9 +39,6 @@ let id = slug.slice(3, 5)
               <a href={watch} target="_blank" class="button">Where to watch</a>
             </div>
           </div>
-          <!-- <div class="gromit-flex">
-            <div class="gromit"></div>
-          </div> -->
         </section>
       </div>
     </div>
@@ -61,16 +58,12 @@ let id = slug.slice(3, 5)
   }
   .page-grid {
     display: grid;
-    /* grid-template-columns: 1fr 4fr 1fr; */
-    /* height: 75vh; */
     place-items: center;
     justify-content: center;
-    /* border: 10px dotted #ffab9a; */
     margin: 1rem;
     height: 100%;
   }
   .striped-box {
-    /* grid-column: 2/2; */
     background: repeating-linear-gradient(
       45deg,
       #f25434,
@@ -84,16 +77,11 @@ let id = slug.slice(3, 5)
   }
   .info-box {
     display: flex;
-
-    /* background: #5dc6b2; */
     background: #73e1cd;
     margin: 2rem;
     clip-path: polygon(90% 0, 100% 25%, 100% 75%, 90% 100%, 0 100%, 0 50%, 0 0);
   }
-  /* img {
-    height: 60vh;
-    max-width: 100%;
-  } */
+
   img {
     max-width: 100%;
     height: auto;
@@ -106,10 +94,8 @@ let id = slug.slice(3, 5)
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-inline-start: 2.75rem; */
     padding: 1.5rem clamp(1rem, 5%, 3rem);
     width: min(100% - 3rem, var(--container-max, 40ch));
-
     font-family: 'General Sans', sans-serif;
     font-size: 22px;
   }
@@ -134,31 +120,14 @@ let id = slug.slice(3, 5)
   .links a {
     margin-inline-end: 2vw;
   }
-  /* .gromit-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .gromit {
-    background: #f6f3e0;
-    border: 25px solid #f6f3e0;
-    border-radius: 50%;
-    margin-inline-start: 100px;
-  } */
 
   @media only screen and (max-width: 787px) {
     .page-grid {
       display: flex;
       flex-direction: column;
-      /* grid-template-columns: 1fr 4fr 1fr; */
-      /* grid-template-rows: 1fr 4fr 1fr; */
-      /* height: 100vh; */
-      /* align-items: center; */
-      /* border: 10px dotted #ffab9a; */
       margin: 0.1rem;
     }
     .striped-box {
-      /* grid-column: 2/2; */
       background: repeating-linear-gradient(
         45deg,
         #f25434,
@@ -174,14 +143,6 @@ let id = slug.slice(3, 5)
         0px 100%,
         0px 14%
       );
-      /* clip-path: polygon(
-        100% 0px,
-        100% 86%,
-        80% 100%,
-        20% 100%,
-        0px 86%,
-        0px 0
-      ); */
       max-width: 100%;
       width: 300px;
       margin: 1rem;
@@ -200,14 +161,6 @@ let id = slug.slice(3, 5)
         0px 100%,
         0px 14%
       );
-      /* clip-path: polygon(
-        100% 0px,
-        100% 86%,
-        80% 100%,
-        20% 100%,
-        0px 86%,
-        0px 0
-      ); */
       align-items: center;
       padding: 1.5rem clamp(1rem, 3%, 3rem);
     }
@@ -237,7 +190,6 @@ let id = slug.slice(3, 5)
     }
     .links {
       flex-direction: column;
-      /* padding: 1.5rem clamp(1rem, 5%, 3rem); */
     }
     .button {
       font-size: 14px;

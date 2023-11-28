@@ -4,10 +4,10 @@ import Card from '../components/Card.astro'
 import movies from '../content/movies/movies.json'
 
 const today = new Date()
-const date = today.getDate()
+const date = today.toISOString().slice(5, 10)
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Please Rewind">
   <main>
     <div class="calendar-border" transition:name="calendar-border-box">
       <ul role="list" class="link-card-grid">
@@ -41,13 +41,10 @@ const date = today.getDate()
   main {
     margin: auto;
     padding: 1rem;
-    /* width: min(1400px, 100% - 2rem); */
     font-family: 'Melodrama';
     color: #156556;
     font-size: 20px;
     line-height: 1.6;
-    /* overflow: auto; */
-    /* overflow-y: scroll; */
     height: 100%;
   }
 
@@ -59,12 +56,8 @@ const date = today.getDate()
     background-position: 0%;
   }
   .calendar-border {
-    /* border: 10px dotted #ffab9a; */
     margin: 1rem;
     padding: 2.5rem;
-
-    /* overflow: auto; */
-    /* height: 100%; */
   }
   .link-card-grid {
     --min: 200px;
@@ -85,29 +78,35 @@ const date = today.getDate()
   }
 
   @media only screen and (max-width: 787px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
     h1 {
       font-size: 3rem;
     }
     .calendar-border {
       width: min(100% - 3rem, var(--container-max, 60ch));
+      /* margin-inline: auto; */
       margin-inline: auto;
+      padding: 0;
     }
     .link-card-grid {
       --min: 200px;
-      --gap: 5rem;
+      --gap: 15rem;
       display: grid;
+      grid-template-columns: unset;
       grid-gap: var(--gap);
+
       /* min() with 100% prevents overflow
   in extra narrow spaces */
       align-items: center;
-      /* justify-content: center; */
+      justify-items: center;
       grid-auto-flow: column;
       overflow-x: auto;
       grid-auto-columns: 100%;
-      grid-template-columns: unset;
-      /* padding-inline: 1rem; */
       scroll-snap-type: x mandatory;
-      /* scroll-padding: 50%; */
+      padding-inline: 0;
       -webkit-overflow-scrolling: touch;
     }
 
@@ -116,14 +115,8 @@ const date = today.getDate()
       scroll-snap-align: center;
       scroll-snap-stop: always;
     }
-    /* .calendar-border {
-      border: 10px dotted #f25434;
-      margin: 0.1rem;
-      padding: 2rem;
-     
-    } */
     .mobile-buttons {
-      --min: 11ch;
+      --min: 30vw;
       --gap: 1rem;
 
       display: grid;
