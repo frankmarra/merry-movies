@@ -89,19 +89,14 @@ const show = slug <= date && slug != '1-01'
   }
   .link-card-front,
   .link-card-back {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   .link-card-front {
     background-color: #73e1cd;
   }
   .link-card-back {
     transform: rotateY(180deg);
-  }
-  .opaque {
-    opacity: 0;
-    background-color: #73e1cd;
-    z-index: 1;
   }
   h2 {
     font-size: 1.65rem;
@@ -120,5 +115,8 @@ const show = slug <= date && slug != '1-01'
   }
   .new-year {
     font-size: 2.5rem;
+  }
+  .opaque {
+    opacity: 0;
   }
 </style>

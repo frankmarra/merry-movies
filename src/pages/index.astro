@@ -29,10 +29,10 @@ const date = today.toISOString().slice(5, 10)
       </ul>
     </div>
     <div class="mobile-buttons">
-      <a href="#1" class="button">Week One</a>
-      <a href="#10" class="button">Week Two</a>
-      <a href="#17" class="button">Week Three</a>
-      <a href="#24" class="button">Week Four</a>
+      <a href="#12-01" class="button">Week 1</a>
+      <a href="#12-10" class="button">Week 2</a>
+      <a href="#12-17" class="button">Week 3</a>
+      <a href="#12-24" class="button">Week 4</a>
     </div>
   </main>
 </Layout>
@@ -87,19 +87,15 @@ const date = today.toISOString().slice(5, 10)
     }
     .calendar-border {
       width: min(100% - 3rem, var(--container-max, 60ch));
-      /* margin-inline: auto; */
       margin-inline: auto;
       padding: 0;
     }
     .link-card-grid {
-      --min: 200px;
+      --min: 100px;
       --gap: 15rem;
       display: grid;
       grid-template-columns: unset;
       grid-gap: var(--gap);
-
-      /* min() with 100% prevents overflow
-  in extra narrow spaces */
       align-items: center;
       justify-items: center;
       grid-auto-flow: column;
@@ -108,10 +104,16 @@ const date = today.toISOString().slice(5, 10)
       scroll-snap-type: x mandatory;
       padding-inline: 0;
       -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
     }
 
     .link-card-grid > * {
       width: min(45ch, 60vw);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
       scroll-snap-align: center;
       scroll-snap-stop: always;
     }

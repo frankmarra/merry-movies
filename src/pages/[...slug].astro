@@ -12,8 +12,6 @@ export async function getStaticPaths() {
 }
 
 const { title, poster, rated, year, plot, slug, watch } = Astro.props
-
-let id = slug.slice(3, 5)
 ---
 
 <Layout title={`${title} | Please Rewind`}>
@@ -35,7 +33,7 @@ let id = slug.slice(3, 5)
             </div>
             <p class="plot">{plot}</p>
             <div class="links">
-              <a href={`/#${id}`} class="button">Back</a>
+              <a href={`/#${slug}`} class="button">Back</a>
               <a href={watch} target="_blank" class="button">Where to watch</a>
             </div>
           </div>
