@@ -131,12 +131,16 @@ const { title } = Astro.props
           font-size: 3rem;
         }
 
+        body {
+          height: 100vh;
+        }
+
         body::before {
           content: '';
           /* position: static; */
           top: 1rem;
           left: 1rem;
-          /* border: none; */
+          border: none;
           /* height: 100vh; */
           width: calc(100% - var(--border-size) * 3.5);
           pointer-events: none;
@@ -160,6 +164,7 @@ const { title } = Astro.props
         .container {
           position: static;
           margin: 0 auto;
+          width: auto;
         }
       }
     </style>
