@@ -9,6 +9,10 @@ const { title } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
+    <meta
+      name="og:image"
+      content="https://res.cloudinary.com/silverbeard/image/upload/v1701307223/Screen_Shot_2023-11-29_at_8.19.26_PM_p2ct0i.png"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500&f[]=melodrama@600&display=swap"
@@ -132,7 +136,9 @@ const { title } = Astro.props
         }
 
         body {
-          height: 100vh;
+          height: auto;
+
+          padding: calc(var(--border-size) * 1);
         }
 
         body::before {
@@ -164,7 +170,8 @@ const { title } = Astro.props
         .container {
           position: static;
           margin: 0 auto;
-          width: auto;
+          width: 99%;
+          height: auto;
         }
       }
     </style>
