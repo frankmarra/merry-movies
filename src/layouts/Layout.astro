@@ -19,10 +19,16 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body>
-    <header><h1>Welcome to Merry Movies!</h1></header>
+    <header>
+      <h1>Welcome to Merry Movies!</h1>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </header>
+
     <div class="container">
       <slot />
     </div>
+
     <style is:global>
       @font-face {
         font-family: 'CheeseDonut';
@@ -82,8 +88,19 @@ const { title } = Astro.props
         border: 10px dotted #ffab9a;
         height: calc(100% - var(--border-size) * 3.5);
         width: calc(100% - var(--border-size) * 3.5);
+        pointer-events: none;
       }
       header {
+        text-align: center;
+      }
+      header a {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        margin: 1.5rem;
+        color: #156556;
+        font-family: 'Melodrama';
+        z-index: 1;
       }
       h1 {
         font-size: 5rem;
@@ -113,6 +130,16 @@ const { title } = Astro.props
         h1 {
           font-size: 3rem;
         }
+        body::before {
+          content: '';
+          position: fixed;
+          top: 1rem;
+          left: 1rem;
+          border: 10px dotted #ffab9a;
+          height: calc(100% - var(--border-size) * 3.5);
+          width: calc(100% - var(--border-size) * 3.5);
+          pointer-events: none;
+        }
       }
     </style>
     <style>
@@ -121,12 +148,27 @@ const { title } = Astro.props
             calc(100% - 55.5px) no-repeat,
           radial-gradient(farthest-side, #000 98%, #0000) 0 0/60px 60px round;
         position: fixed;
-        height: calc(100% - var(--border-size) * 13);
+        height: calc(100% - var(--border-size) * 14);
         width: calc(100% - var(--border-size) * 4.3);
         overflow-y: scroll;
         -webkit-mask: var(--mask);
         mask: var(--mask);
         background-color: #156556;
+      }
+
+      @media only screen and (max-width: 787px) {
+        .container {
+          --mask: linear-gradient(#000 0 0) 50% / calc(100% - 55.5px)
+              calc(100% - 55.5px) no-repeat,
+            radial-gradient(farthest-side, #000 98%, #0000) 0 0/60px 60px round;
+          position: fixed;
+          height: calc(100% - var(--border-size) * 4.3);
+          width: calc(100% - var(--border-size) * 4.3);
+          overflow-y: scroll;
+          -webkit-mask: var(--mask);
+          mask: var(--mask);
+          background-color: #156556;
+        }
       }
     </style>
   </body>
