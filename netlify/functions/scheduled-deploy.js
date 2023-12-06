@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 import { schedule } from '@netlify/functions'
 
 const BUILD_HOOK =
@@ -8,7 +8,7 @@ const handler = schedule('0 0 * * *', async () => {
   await fetch(BUILD_HOOK, {
     method: 'POST'
   }).then((response) => {
-    console.log('Build hook response: ', response.json())
+    console.log('Build hook response: ', response)
   })
 
   return {
