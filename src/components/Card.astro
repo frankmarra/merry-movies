@@ -1,7 +1,12 @@
 ---
 import { Image } from 'astro:assets'
 const { slug, title, poster, rated, year, plot, index, date } = Astro.props
-const show = (slug <= date && slug != '1-01') || date == '01-01'
+
+//Uncomment this code next year to have movies appear based on date.
+//const show = (slug <= date && slug != '1-01') || date == '01-01'
+
+//Comment this code out next year before launch. 
+const show = true
 ---
 
 <li class="striped-box" transition:name={`striped-box-${slug}`} id={slug}>

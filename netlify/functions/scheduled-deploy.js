@@ -1,3 +1,6 @@
+//This code is will schedule a cron job to take place every day that will redeploy the page so the date updates.
+//Uncomment next year before launching.
+
 // import fetch from 'node-fetch'
 // import { schedule } from '@netlify/functions'
 
